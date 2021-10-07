@@ -23,7 +23,7 @@
       <input type="number" aria-label="number-teams" placeholder="Enter the number of teams" class=" rounded-pill form-control bg-warning text-dark mr-5">
       <button type="button" class="btn btn-info rounded-pill">Create teams</button>
     </div>
-    <div class="placeOfItems">
+    <div class=" ml-5 placeOfItems">
     </div>
     <div class="assign mt-5 ml-5">
       <button type="button" class="ml-3 btn btn-info rounded-pill">Assign</button>
@@ -42,15 +42,22 @@
         listItem.innerText = gettingIdOfFirstInput.value
         unOrderedList.appendChild(listItem)
         let placeOfItems2 = document.querySelector('.placeOfItems')
-        placeOfItems2s.appendChild(listItem)
+        placeOfItems2.appendChild(listItem)
+        gettingIdOfFirstInput.value= ""
       }
 
-      const numberOfTeams = function(){
-        let getClassOfNumberInput = querySelector('.form-control')
-        if(){
-
-        }
-      }
+      // const numberOfTeams = function(){
+      //   let listForTeams = document.createElement('li')
+      //   let getClassOfNumberInput = document.querySelector('.form-control')
+      //   listForTeams.innerText = "2"
+      //   listForTeams.innerText = "3"
+      //   listForTeams.innerText = "4"
+      //   listForTeams.innerText = "5"
+      //   getClassOfNumberInput.appendChild(listForTeams)
+      //   if(getClassOfNumberInput === 2){
+      //
+      //   }
+      // }
     </script>
 
   </body>
