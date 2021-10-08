@@ -7,10 +7,37 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
     <title>Hello, world!</title>
+
     <style>
-      body{
-        /* background-color: darkgrey; */
-      }
+    .team-box{
+      position: relative;
+      background-color: white;
+      margin-top: 200px;
+      height: 300px;
+    }
+    .team-box h5{
+      margin: 30px;
+    }
+    .team-box1{
+      position: absolute;
+      display: inline-block;
+      margin-right: 50px;
+      left:200px;
+      background-color:#7FFFD4;
+      width: 250px;
+      height: 500px;
+      border-radius: 20px;
+    }
+    .team-box2{
+      position: absolute;
+      left: 700px;
+      display: inline-block;
+      margin-left: 50px;
+      background-color: #7FFFD4;
+      width: 250px;
+      height: 500px;
+      border-radius: 20px;
+    }
     </style>
   </head>
   <body>
@@ -28,7 +55,14 @@
     <div class="assign mt-5 ml-5">
       <button type="button" class="ml-3 btn btn-info rounded-pill">Assign</button>
     </div>
-
+    <div class="team-box">
+    <div class="team-box1">
+      <h5>Team1:</h5>
+    </div>
+    <div class="team-box2">
+      <h5>Team2:</h5>
+    </div>
+  </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
@@ -43,6 +77,8 @@
         unOrderedList.appendChild(listItem)
         let placeOfItems2 = document.querySelector('.placeOfItems')
         placeOfItems2.appendChild(listItem)
+        let box1 = document.querySelector('team-box1')
+        // box1.appendChild(listItem)
         gettingIdOfFirstInput.value= ""
       }
 
